@@ -1,8 +1,12 @@
 package com.zhenhunfan.activitytest;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,8 +57,52 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "hello mainActivity", Toast.LENGTH_SHORT).show();
+                //视频01：演示toast
+                //Toast.makeText(MainActivity.this, "hello mainActivity", Toast.LENGTH_SHORT).show();
+
+                //视频02：演示打开SecondActivity
+                //跳转不同的activity,显示intent，从MainActivity 打开SecondActivity
+                //Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                //startActivity(intent);
+
+                //跳转不同的activity,隐式intent，从MainActivity 打开SecondActivity，需要在manifest里配一个action
+                //Intent intent = new Intent("com.zhenhunfan.ActivityTest.CALL");
+                //startActivity(intent);
+
+                //调用拨号应用
+                //Intent intent = new Intent();
+                //intent.setAction(Intent.ACTION_CALL);
+                //intent.setAction(Intent.ACTION_DIAL);
+                //intent.setData(Uri.parse("tel:18358112692"));
+                //startActivity(intent);
+
+                //打开系统设置界面
+                //Intent intent = new Intent();
+                //intent.setAction("android.settings.SETTINGS");
+                //startActivity(intent);
+
+                //跳转不同的activity,从MainActivity 打开SecondActivity，并且传递数据
+                //Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                //intent.putExtra("data","hello secondActivity,I'm MainActivity");
+                //startActivity(intent);
+
+                //从MainActivity 打开SecondActivity，并且传递数据，并且接受返回数据
+                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                intent.putExtra("data","hello secondActivity,I'm MainActivity");
+                startActivityForResult(intent,1);
             }
         });
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        switch(requestCode){
+            case 1:
+                if(resultCode == RESULT_OK){
+                    String resultData = data.getStringExtra("data");
+                    Log.d("返回的值：",resultData);
+                }
+        }
     }
 }
