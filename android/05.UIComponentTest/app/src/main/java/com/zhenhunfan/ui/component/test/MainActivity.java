@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -81,5 +82,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .show();
+    }
+
+    /**
+     * 打开Camera Activity
+     * @param view
+     */
+    public void startCameraActivity(View view){
+        Intent intent = new Intent(MainActivity.this,CameraActivity.class);
+        startActivity(intent);
     }
 }

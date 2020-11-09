@@ -133,5 +133,12 @@
             android:layout_height="wrap_content"
             android:onClick="startCustomDialog"
             android:text="打开自定义对话框" />
+
+        <Button
+            android:id="@+id/btn_open_camera_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startCameraActivity"
+            android:text="打开Camera Activity" />
     </LinearLayout>
 </ScrollView>
