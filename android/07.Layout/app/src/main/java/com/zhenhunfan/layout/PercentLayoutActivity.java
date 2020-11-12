@@ -18,4 +18,9 @@ public class PercentLayoutActivity extends AppCompatActivity {
         Intent intent = new Intent(PercentLayoutActivity.this,TableLayoutActivity.class);
         startActivity(intent);
     }
+
+    public void openJDLayout(View v){
+        Intent intent = new Intent(PercentLayoutActivity.this,JDLoginActivity.class);
+        startActivity(intent);
+    }
 }

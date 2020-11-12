@@ -7,52 +7,64 @@
     tools:context=".PercentLayoutActivity">
 
     <Button
-        android:id="@+id/btn_open_Table_Layout"
-        app:layout_widthPercent="100%"
+        android:id="@+id/btn_open_JD_activity"
+        android:onClick="openJDLayout"
+        android:text="打开仿京东登录activity"
         app:layout_heightPercent="18%"
-        android:text="打开TableLayout" android:onClick="openTableLayout"
+        app:layout_widthPercent="100%"
 
         />
+
+    <Button
+        android:layout_below="@id/btn_open_JD_activity"
+        android:id="@+id/btn_open_Table_Layout"
+        android:onClick="openTableLayout"
+        android:text="打开TableLayout"
+        app:layout_heightPercent="18%"
+        app:layout_widthPercent="100%"
+
+        />
+
 
     <!--    百分比布局演示    -->
     <TextView
         android:id="@+id/tv_left_top"
-        app:layout_widthPercent="30%"
-        app:layout_heightPercent="18%"
-
+        android:layout_below="@id/btn_open_Table_Layout"
         android:background="#dd0000"
+
         android:gravity="center"
+        android:text="30%"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_below="@id/btn_open_Table_Layout"
-        android:text="30%"/>
+        app:layout_heightPercent="18%"
+        app:layout_widthPercent="30%" />
 
     <TextView
         android:id="@+id/tv_right_top"
-        app:layout_widthPercent="70%"
-        app:layout_heightPercent="18%"
+        android:layout_below="@id/btn_open_Table_Layout"
+        android:layout_toRightOf="@id/tv_left_top"
 
         android:background="#0000dd"
         android:gravity="center"
+        android:text="70%"
+        android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:layout_toRightOf="@id/tv_left_top"
-        android:layout_below="@id/btn_open_Table_Layout"
-        android:text="70%"/>
+        app:layout_heightPercent="18%"
+        app:layout_widthPercent="70%" />
 
     <TextView
         android:id="@+id/tv_center_left"
-        app:layout_widthPercent="80%"
-        app:layout_heightPercent="18%"
-        app:layout_marginTopPercent="10%"
-
+        android:layout_below="@id/tv_left_top"
         android:background="#0000dd"
         android:gravity="center"
+
+        android:text="80%"
+        android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:layout_below="@id/tv_left_top"
-        android:text="80%"/>
+        app:layout_heightPercent="18%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="80%" />
 
 </androidx.percentlayout.widget.PercentRelativeLayout>

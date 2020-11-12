@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FrameActivity"></activity>
+        <activity android:name=".JDLoginActivity"></activity>
+        <activity android:name=".ConstraintLayoutActivity" />
+        <activity android:name=".RelativeActivity" />
+        <activity android:name=".LinearActivity" />
+        <activity android:name=".FrameActivity" />
         <activity android:name=".TableLayoutActivity" />
         <activity android:name=".PercentLayoutActivity">
             <intent-filter>
