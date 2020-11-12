@@ -9,19 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JDLoginActivity"></activity>
-        <activity android:name=".ConstraintLayoutActivity" />
-        <activity android:name=".RelativeActivity" />
-        <activity android:name=".LinearActivity" />
-        <activity android:name=".FrameActivity" />
-        <activity android:name=".TableLayoutActivity" />
-        <activity android:name=".PercentLayoutActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".JDLoginActivity" />
+        <activity android:name=".ConstraintLayoutActivity" />
+        <activity android:name=".RelativeActivity" />
+        <activity android:name=".LinearActivity" />
+        <activity android:name=".FrameActivity" />
+        <activity android:name=".TableLayoutActivity" />
+        <activity android:name=".PercentLayoutActivity"/>
     </application>
 
 </manifest>

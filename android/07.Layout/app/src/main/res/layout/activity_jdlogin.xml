@@ -7,7 +7,9 @@
     android:background="#FFF6F2ED"
     android:orientation="vertical"
     tools:context=".JDLoginActivity">
-
+    <com.zhenhunfan.layout.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

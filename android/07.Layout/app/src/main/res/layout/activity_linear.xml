@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".LinearActivity"
     android:orientation="vertical">
+    <!-- 引入自定义组件 -->
+    <!--    <include layout="@layout/title_bar"/>-->
     <!--
         1.当同级组件中只有一个layout_weight="1" 代表EditText可以占有的最大空间
         2.当同级组件中有多个layout_weight ，权重按比例显示
     -->
+    <com.zhenhunfan.layout.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

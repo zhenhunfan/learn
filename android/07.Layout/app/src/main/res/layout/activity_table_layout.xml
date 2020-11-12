@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TableLayoutActivity">
 
+    <com.zhenhunfan.layout.TitleLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <com.zhenhunfan.layout.TableView1
         android:id="@+id/table"
         android:layout_width="wrap_content"
