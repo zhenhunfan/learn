@@ -29,3 +29,5 @@
 7.一个布局的综合案例（仿京东登录页面）
 
 8.自定义组件titlebar
+
+9.侧滑布局DrawLayout和NavigationView

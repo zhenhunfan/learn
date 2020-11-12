@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DrawLayoutActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +23,7 @@
         <activity android:name=".LinearActivity" />
         <activity android:name=".FrameActivity" />
         <activity android:name=".TableLayoutActivity" />
-        <activity android:name=".PercentLayoutActivity"/>
+        <activity android:name=".PercentLayoutActivity" />
     </application>
 
 </manifest>

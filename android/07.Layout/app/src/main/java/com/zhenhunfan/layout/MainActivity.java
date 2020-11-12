@@ -78,4 +78,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, JDLoginActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * 打开Draw布局
+     * @param view
+     */
+    public void openDraw(View view){
+        Intent intent = new Intent(MainActivity.this, DrawLayoutActivity.class);
+        startActivity(intent);
+    }
 }

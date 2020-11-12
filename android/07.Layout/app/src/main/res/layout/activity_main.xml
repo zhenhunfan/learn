@@ -42,4 +42,10 @@
         android:layout_height="wrap_content"
         android:text="打开仿京东登录案例"
         android:onClick="openJD"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开侧滑布局"
+        android:onClick="openDraw"/>
 </LinearLayout>
