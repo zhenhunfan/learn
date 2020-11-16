@@ -70,4 +70,13 @@ public class MainListViewActivity extends AppCompatActivity {
         Intent intent = new Intent(MainListViewActivity.this, SpinnerAndAutoCompleteTextViewActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * 打开RecyclerView
+     * @param view
+     */
+    public void openRecyclerView(View view) {
+        Intent intent = new Intent(MainListViewActivity.this, RecycleViewDemoActivity.class);
+        startActivity(intent);
+    }
 }

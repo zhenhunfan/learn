@@ -39,3 +39,5 @@
     3.BaseAdapter
     4.GridView
     5.Spinner和AutoCompleteTextView
+
+11.RecyclerView 可以横向排列，滚动
