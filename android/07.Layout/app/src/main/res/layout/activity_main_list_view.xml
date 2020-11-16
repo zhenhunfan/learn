@@ -6,15 +6,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".listview.MainListViewActivity">
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="打开Simple List View"
-        android:onClick="openSimpleListView"/>
+        android:onClick="openSimpleListView"
+        android:text="打开Simple List View" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="openFruitListView"
-        android:text="打开带图片的List View"/>
+        android:text="打开带图片的List View" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openSimpleAdapterListView"
+        android:text="打开SimpleAdapter的List View" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openFoodListView"
+        android:text="打开稍复杂的List View" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openGridView"
+        android:text="打开GridView" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openSpinnerAndACATView"
+        android:text="打开SpinnerAndACAT" />
 </LinearLayout>

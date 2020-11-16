@@ -34,4 +34,40 @@ public class MainListViewActivity extends AppCompatActivity {
         Intent intent = new Intent(MainListViewActivity.this, FruitListViewActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * 打开SimpleAdapter的ListView
+     * @param view
+     */
+    public void openSimpleAdapterListView(View view) {
+        Intent intent = new Intent(MainListViewActivity.this, SimpleAdapterActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 打开稍复杂的ListView
+     * @param view
+     */
+    public void openFoodListView(View view) {
+        Intent intent = new Intent(MainListViewActivity.this, BaseAdapterActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 打开GridVieew
+     * @param view
+     */
+    public void openGridView(View view) {
+        Intent intent = new Intent(MainListViewActivity.this, GridViewDemoActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 打开Spinner和AutoCompleteTextView
+     * @param view
+     */
+    public void openSpinnerAndACATView(View view) {
+        Intent intent = new Intent(MainListViewActivity.this, SpinnerAndAutoCompleteTextViewActivity.class);
+        startActivity(intent);
+    }
 }

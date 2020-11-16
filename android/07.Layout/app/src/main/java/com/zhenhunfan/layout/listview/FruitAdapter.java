@@ -29,14 +29,31 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
         this.context = context;
     }
 
+    /**
+     * listItem 实现，每次创建ListItem 都会被调用
+     * @param position ListItem的索引
+     * @param convertView view的缓冲区
+     * @param parent
+     * @return
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Fruit fruit = getItem(position);
-        View view = LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
-        //ImageView ivFruit = view.findViewById(R.id.fruit_image);
-        TextView tvFruit = view.findViewById(R.id.fruit_name);
-        //ivFruit.setImageResource(fruit.getImageId());
+
+        //优化一下view，当缓冲区中的convertView为空，则创建view，否则就拿convertView
+        View view;
+        TextView tvFruit;
+        if(convertView ==  null) {
+            view = LayoutInflater.from(getContext()).inflate(resourceId, parent, false);
+            tvFruit = view.findViewById(R.id.fruit_name);
+            view.setTag(tvFruit);
+        }
+        else {
+            view = convertView;
+            tvFruit = (TextView) view.getTag();
+        }
+
         tvFruit.setText(fruit.getName());
         Drawable  dra = context.getDrawable(fruit.getImageId()) ;
         dra.setBounds(0, 0, 50, 50);

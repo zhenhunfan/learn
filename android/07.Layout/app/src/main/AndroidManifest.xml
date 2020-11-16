@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".listview.FruitListViewActivity"></activity>
+        <activity android:name=".listview.SpinnerAndAutoCompleteTextViewActivity"></activity>
+        <activity android:name=".listview.GridViewDemoActivity" />
+        <activity android:name=".listview.SimpleAdapterActivity" />
+        <activity android:name=".listview.BaseAdapterActivity" />
+        <activity android:name=".listview.FruitListViewActivity" />
         <activity android:name=".listview.MainListViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".DrawLayoutActivity" />
