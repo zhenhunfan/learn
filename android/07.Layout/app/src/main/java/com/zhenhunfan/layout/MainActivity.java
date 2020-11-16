@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.zhenhunfan.layout.listview.ListViewActivity;
+import com.zhenhunfan.layout.listview.MainListViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -85,6 +88,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void openDraw(View view){
         Intent intent = new Intent(MainActivity.this, DrawLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 打开ListView布局
+     * @param view
+     */
+    public void openListView(View view){
+        Intent intent = new Intent(MainActivity.this, MainListViewActivity.class);
         startActivity(intent);
     }
 }

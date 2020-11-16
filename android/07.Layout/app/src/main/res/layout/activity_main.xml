@@ -48,4 +48,10 @@
         android:layout_height="wrap_content"
         android:text="打开侧滑布局"
         android:onClick="openDraw"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开ListView"
+        android:onClick="openListView"/>
 </LinearLayout>
