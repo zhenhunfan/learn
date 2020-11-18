@@ -1,4 +1,4 @@
-package com.zhenhunfan.broadcast.demo.view;
+package com.zhenhunfan.broadcast.demo.b05;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,20 +8,17 @@ import android.view.View;
 
 import com.zhenhunfan.broadcast.demo.R;
 
-/**
- * 演示定义广播，和静态注册接收器
- */
-public class B01MyBroadcast extends AppCompatActivity {
+public class Main2Activity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b01_my_broadcast);
+        setContentView(R.layout.activity_main2);
     }
 
-    public void sendMyBroadcast(View view){
+    public void forceOffLine(View view){
         Intent intent = new Intent();
-        intent.setAction("com.zhenhunfan.broadcast.demo.view.B01MyBroadcast.MYBROADCAST");
+        intent.setAction("com.zhenhunfan.broadcast.demo.b05.FORCE_OFFLINE");
         sendBroadcast(intent);
     }
 }

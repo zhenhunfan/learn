@@ -1,4 +1,4 @@
-package com.zhenhunfan.broadcast.demo.view;
+package com.zhenhunfan.broadcast.demo.b02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 
 import com.zhenhunfan.broadcast.demo.R;
-import com.zhenhunfan.broadcast.demo.receiver.B02Receiver;
+import com.zhenhunfan.broadcast.demo.b02.B02Receiver;
 
 /**
  * 演示动态注册接收器,接收系统广播,网络变更

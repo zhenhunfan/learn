@@ -6,8 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.zhenhunfan.broadcast.demo.view.B01MyBroadcast;
-import com.zhenhunfan.broadcast.demo.view.B02DynamicReceiver;
+import com.zhenhunfan.broadcast.demo.b01.B01MyBroadcast;
+import com.zhenhunfan.broadcast.demo.b02.B02DynamicReceiver;
+import com.zhenhunfan.broadcast.demo.b05.B05LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openB02(View view){
         Intent intent = new Intent(this, B02DynamicReceiver.class);
+        startActivity(intent);
+    }
+
+    public void openB05(View view){
+        Intent intent = new Intent(this, B05LoginActivity.class);
         startActivity(intent);
     }
 }

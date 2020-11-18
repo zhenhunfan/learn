@@ -19,4 +19,10 @@
         android:text="打开B02 系统广播和动态注册"
         android:onClick="openB02"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开B05 强制下线"
+        android:onClick="openB05"/>
+
 </LinearLayout>

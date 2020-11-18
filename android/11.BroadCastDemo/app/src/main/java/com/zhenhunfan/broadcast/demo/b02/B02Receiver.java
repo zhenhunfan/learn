@@ -1,4 +1,4 @@
-package com.zhenhunfan.broadcast.demo.receiver;
+package com.zhenhunfan.broadcast.demo.b02;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

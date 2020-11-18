@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.B01MyBroadcast">
+    tools:context=".b01.B01MyBroadcast">
 
     <Button
         android:layout_width="match_parent"
