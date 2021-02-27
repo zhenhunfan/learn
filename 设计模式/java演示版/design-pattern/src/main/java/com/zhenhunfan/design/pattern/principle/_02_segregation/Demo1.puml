@@ -1,0 +1,23 @@
+@startuml
+
+interface interface1{
+    void operation1();
+    void operation2();
+    void operation3();
+    void operation4();
+    void operation5();
+}
+
+class A
+note top: 1） A 通过interface1 会（依赖）使用 B \n2） 但是A中只会使用到1、2、3三个方法
+class C
+note bottom: 1） C 通过interface1 会（依赖）使用 D \n2） 但是A中只会使用到1、4、5三个方法
+class B
+
+class D
+
+interface1 <|.. B
+interface1 <|.. D
+interface1 <.. A
+interface1 <.. C
+@enduml
