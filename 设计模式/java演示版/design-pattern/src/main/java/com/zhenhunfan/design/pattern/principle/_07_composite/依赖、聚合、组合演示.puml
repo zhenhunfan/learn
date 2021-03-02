@@ -1,0 +1,21 @@
+@startuml
+
+class A
+class B{
+    void operation(A a)
+}
+B ..> A : B依赖A
+
+class C
+class D{
+    C c = new C()
+}
+D *-- C : D组合C
+
+class E{
+    C c;
+    setC(C c);
+}
+
+E o-- C : E聚合C
+@enduml
