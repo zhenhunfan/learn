@@ -1,0 +1,27 @@
+@startuml
+
+abstract class Pizza{
+    void prepare()
+    void bake()
+    void cut()
+    void box()
+}
+
+class CheesePizza{}
+
+class GreekPizza{}
+
+Pizza <|-- CheesePizza
+Pizza <|-- GreekPizza
+
+class OrderPizza{}
+class SimpleFactory{}
+
+
+OrderPizza o-- SimpleFactory
+SimpleFactory ..> CheesePizza
+SimpleFactory ..> GreekPizza
+SimpleFactory ..> Pizza
+class PizzaStore{}
+PizzaStore ..> OrderPizza
+@enduml
