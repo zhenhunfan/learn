@@ -13,8 +13,16 @@
     <url>https://www.cnblogs.com/zhenhunfan2/</url>
     <inceptionYear>2021-Now</inceptionYear>
 
-    <dependencies>
+    <properties>
+        <spring.version>5.3.4</spring.version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
