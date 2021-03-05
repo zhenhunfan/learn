@@ -10,15 +10,8 @@ package com.zhenhunfan.design.pattern._03_prototype.demo4;
  */
 public class Sheep implements Cloneable {
     String name;
-
-    public Sheep getFriend() {
-        return friend;
-    }
-
-    public void setFriend(Sheep friend) {
-        this.friend = friend;
-    }
-
+    int age;
+    String color;
     Sheep friend;
 
     public Sheep(String name, int age, String color, Sheep friend) {
@@ -44,33 +37,6 @@ public class Sheep implements Cloneable {
                 ", color='" + color + '\'' +
                 '}';
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    int age;
-    String color;
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
