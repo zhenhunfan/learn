@@ -1,0 +1,33 @@
+@startuml
+class Director{
+    - builder : Builder
+    + construct()
+}
+note left of Director::"construct()"
+  调用builder.builderPartA();
+  调用builder.builderPartB();
+  调用builder.builderPartC();
+  return builder.getResult();
+end note
+
+abstract class Builder{
+    + builderPartA()
+    + builderPartB()
+    + builderPartC()
+    + getResult()
+}
+
+Director --> Builder
+Director o-- Builder
+
+Builder *-- Product
+
+class ConcreteBuilder{
+    + builderPartA()
+    + builderPartB()
+    + builderPartC()
+    + getResult()
+}
+
+ConcreteBuilder --|> Builder
+@enduml
