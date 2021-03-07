@@ -6,4 +6,4 @@ demo1: 传统方式实现 \
 demo2: 对demo1的改进，利用Object的clone()方式实现\
 demo3: 浅拷贝\
 demo4: 深拷贝 - 重写clone()\
-demo5: 深拷贝 - 序列化 推荐√
+demo5: 深拷贝 - 序列化 不推荐，费CPU，除非不得已

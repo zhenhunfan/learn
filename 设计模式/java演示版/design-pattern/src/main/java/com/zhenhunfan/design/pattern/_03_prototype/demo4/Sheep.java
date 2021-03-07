@@ -39,7 +39,7 @@ public class Sheep implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Sheep clone() throws CloneNotSupportedException {
         return new Sheep(this);
     }
 }

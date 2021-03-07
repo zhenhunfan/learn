@@ -65,7 +65,7 @@ public class Sheep implements Cloneable {
     String color;
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    protected Sheep clone() throws CloneNotSupportedException {
+        return (Sheep) super.clone();
     }
 }

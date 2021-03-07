@@ -14,7 +14,7 @@ public class Client {
         Sheep friend = new Sheep("suzy",2,"black",null);
         Sheep tom = new Sheep("tom",1,"白色",friend);
 
-        Sheep jack = (Sheep)tom.clone();
+        Sheep jack = tom.clone();
 
         //是两个不同的对象
         System.out.println("tom == jack : "+(tom == jack));
