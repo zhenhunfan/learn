@@ -1,0 +1,42 @@
+@startuml
+
+abstract class AbstractState{
+    # hg:ScoreContext
+    # stateName:String
+    # score:int
+    + checkState():void
+    + addScore(int x):void
+}
+note left of AbstractState:抽象状态类
+
+class ScoreContext{
+    - state:AbstractState
+    + ScoreContext()
+    + getState():AbstractState
+    + setState(AbstractState state):void
+    + addScore(int x);void
+}
+note right of ScoreContext:环境类
+
+AbstractState --o ScoreContext
+ScoreContext --o AbstractState
+
+class HighState{
+    + HighState(AbstractState state)
+    + checkState():void
+}
+
+class MiddleState{
+    + MiddleState(AbstractState state)
+    + checkState():void
+}
+
+class LowState{
+    + LowState(ScoreContext hj)
+    + LowState(AbstractState state)
+    + checkState():void
+}
+HighState --|> AbstractState
+MiddleState --|> AbstractState
+LowState --|> AbstractState
+@enduml

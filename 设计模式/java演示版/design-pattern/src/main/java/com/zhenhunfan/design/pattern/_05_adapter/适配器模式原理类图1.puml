@@ -1,0 +1,25 @@
+@startuml
+
+class Adaptee{
+    + specificRequest(): Type
+}
+note left: 原始接口或类
+
+interface Target{
+    + request(): Type
+}
+note right: 适配器的接口
+
+class Adapter{
+    + request(): Type
+}
+note right: 适配器
+
+Adaptee --o Adapter : 这里可以是聚合也可以是继承
+Adapter ..|> Target
+
+class Client
+note right:客户端
+
+Client  --> Target
+@enduml

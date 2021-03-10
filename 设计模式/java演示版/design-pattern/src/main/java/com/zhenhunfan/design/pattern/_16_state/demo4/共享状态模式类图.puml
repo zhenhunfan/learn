@@ -1,0 +1,44 @@
+@startuml
+
+abstract class ShareState {
+    + abstract Handle(ShareContext context):void
+}
+note left:抽象状态类
+
+class ShareContext {
+    - state:ShareState
+    - HashMap<String, ShareState> stateSet = new HashMap<String, ShareState>();
+    + ShareContext():void
+    //
+    + setState(ShareState state):void
+    //读取状态
+    + getState(String key):ShareState
+    //对请求做处理
+    + Handle():void
+}
+note left:享元环境类
+note right of ShareContext::setState
+    设置新状态
+end note
+note right of ShareContext::getState
+    读取状态
+end note
+note right of ShareContext::Handle
+    对请求做处理
+end note
+
+ShareState --o ShareContext
+
+
+class ConcreteState1{
+    + Handle(ShareContext context):void
+}
+note left:具体状态1类
+ConcreteState1 --|> ShareState
+
+class ConcreteState2{
+    + Handle(ShareContext context):void
+}
+note left:具体状态2类
+ConcreteState2 --|> ShareState
+@enduml
