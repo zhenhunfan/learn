@@ -16,6 +16,7 @@
     <properties>
         <spring.version>5.3.4</spring.version>
         <lombok.version>1.18.18</lombok.version>
+        <jep.version>2.4.2</jep.version>
     </properties>
 
     <dependencies>
@@ -29,6 +30,11 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scijava</groupId>
+            <artifactId>jep</artifactId>
+            <version>${jep.version}</version>
         </dependency>
     </dependencies>
 
