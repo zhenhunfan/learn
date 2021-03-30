@@ -1,0 +1,11 @@
+{
+  "name": "zhenhunfan-practice-toast",
+  "version": "1.0.1",
+  "description": "提示组件，一段事件后消失",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhenhunfan",
+  "license": "ISC"
+}

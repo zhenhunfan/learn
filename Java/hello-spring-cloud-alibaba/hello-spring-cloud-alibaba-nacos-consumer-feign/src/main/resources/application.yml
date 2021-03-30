@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: nacos-consumer-feign
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.127.137:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #Sentinel 控制台地址
+        port: 8719 #应用与Sentinel控制台交互的端口，应用本地会起一个该端口占用的HttpServer
+
+server:
+  port: 9092
+
+#端点检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+feign:
+  sentinel:
+    enabled: true

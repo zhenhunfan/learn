@@ -1,0 +1,12 @@
+.vs
+bin
+obj
+
+*.sln
+*.csproj.user
+
+01.mvc simple example
+02.mvc simple example
+03. RazorPage
+05. Blazor
+

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: rocketmq-consumer
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: 192.168.127.142:9876
+      bindings:
+        input: {destination: test-topic, content-type: text/plain, group: test-group}
+
+server:
+  port: 9094
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

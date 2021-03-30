@@ -1,0 +1,11 @@
+{
+  "name": "zhenhunfan-practice-rotate",
+  "version": "1.0.1",
+  "description": "自定义命令v-rotate，用于旋转文字，例子：<span v-rotate>aaa</span>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhenhunfan",
+  "license": "ISC"
+}

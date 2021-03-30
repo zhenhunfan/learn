@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package my.project;  //假如生成到C#中，则C#中的命名空间位My.Project
+
+message Person{
+    string name = 1;
+}

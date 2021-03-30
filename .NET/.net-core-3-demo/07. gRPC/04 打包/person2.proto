@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package my.project;  
+option csharp_namespace = "My.Webapi"; //设置了该选项后，再生成到C#中，则C#中的命名空间位My.Webapi
+
+message Person{
+    string name = 1;
+}

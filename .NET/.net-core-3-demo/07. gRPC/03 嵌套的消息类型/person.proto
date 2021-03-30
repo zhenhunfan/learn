@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Person{
+    string name = 1;
+    reserved Address addlist = 2; //可能又多套房
+
+    message Address {
+        string province = 1;
+        string city = 2;
+    }
+}

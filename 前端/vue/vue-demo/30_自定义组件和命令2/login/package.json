@@ -1,0 +1,11 @@
+{
+  "name": "zhenhunfan-mmp-login",
+  "version": "1.0.1",
+  "description": "移动中台自定义组件login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhenhunfan",
+  "license": "ISC"
+}

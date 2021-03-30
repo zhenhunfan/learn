@@ -1,0 +1,22 @@
+syntax = "proto3";	//语法是proto3
+
+option csharp_namespace = "GRpc_Api";	//定义生成的cs代码命名空间
+
+package API;	//定义包名
+
+//定义服务
+service Employees {
+	rpc GetAll(GetAllRequest) returns (GetAllResponse) {}
+}
+
+message GetAllRequest{
+
+}
+
+message GetAllResponse{
+    repeated Employee Employees = 1;
+}
+
+message Employee{
+    string name = 1;
+}

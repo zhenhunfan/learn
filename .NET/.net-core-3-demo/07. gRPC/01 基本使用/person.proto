@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+message Person {
+  int32 id = 1;
+  string name = 2;
+  bool is_male = 3;
+  float height = 4;
+  float weight = 5;
+  bytes avator = 6; //头像
+  string email = 7;
+  bool email_verified = 8;
+
+  repeated string phone_number = 9;
+
+  reserved 10, 11, 12 to 20;
+  reserved "foo", "bar";
+
+  enum Gender {
+    option allow_alias = true;
+    NOT_SPECIFIED = 0;
+    FEMALE = 1;
+    MALE = 2;
+    WOMAN = 1;
+    MAN = 2;
+
+    reserved 3,4,5 to max;
+    reserved "BOY","GIRL";
+  }
+
+  Gender gender = 21;
+}
